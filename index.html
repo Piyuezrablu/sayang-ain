@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 18th Birthday – Airin Nirinda Putri</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Cormorant Garamond (display) + Lato (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 1 – HERO
+       Untuk mengganti nama: ubah teks di dalam <span class="hero-name">
+       Untuk mengganti lagu: ganti file music/music.mp3
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <canvas id="starCanvas"></canvas>
+
+    <div class="hero-content fade-in">
+      <p class="hero-eyebrow">✦ untuk kamu yang istimewa ✦</p>
+      <h1 class="hero-title">Happy 18<sup>th</sup> Birthday</h1>
+      <!-- GANTI NAMA DI BAWAH INI -->
+      <h2 class="hero-name">Airin Nirinda Putri</h2>
+      <p class="hero-date">15 Maret 2008</p>
+      <div class="hero-divider"></div>
+    </div>
+
+    <!-- Lagu autoplay – ganti file music/music.mp3 -->
+    <audio id="bgMusic" autoplay loop>
+      <source src="music/perunggu.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Indikator lagu (tanpa tombol) -->
+    <div class="music-note" id="musicNote">♪</div>
+
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 2 – BIRTHDAY MESSAGE
+       Ganti teks di dalam <p class="message-body"> sesuai keinginan
+  ══════════════════════════════════════════ -->
+  <section class="message reveal" id="message">
+    <div class="section-inner">
+      <p class="section-label">✦ pesan untukmu ✦</p>
+      <h2 class="section-heading">Selamat Ulang Tahun, Sayang</h2>
+
+      <!-- GANTI PESAN DI BAWAH INI -->
+      <p class="message-body">
+        hari ini tanggal yang ngingetin aku kalau ada satu orang yang bikin hidup aku berubah arah, itu kamu. dari semua hari yang lewat, kehadiran kamu selalu punya cara aneh buat bikin semuanya terasa lebih hidup. aku mungkin ga selalu pinter ngomong atau nunjukin semuanya dengan sempurna, tapi yang jelas aku bersyukur banget bisa kenal kamu, jalan bareng kamu, dan ada di cerita hidup kamu.
+      </p>
+
+      <!-- GANTI PESAN KEDUA DI BAWAH INI (opsional, bisa dihapus) -->
+      <p class="message-body">
+        di umur kamu yang baru ini, aku cuma pengen kamu tetap jadi diri kamu yang aku kenal. yang kuat, yang kadang ngeselin, tapi selalu punya tempat khusus di hidup aku. semoga semua hal baik pelan pelan dateng ke kamu. selama aku masih ada di sini, aku bakal tetap jadi orang yang dukung kamu, jagain kamu, dan ngerayain setiap langkah yang kamu ambil. selamat ulang tahun.
+      </p>
+
+      <p class="message-signature">— love u more than anything sayang ❤</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 3 – PHOTO MEMORIES
+       Ganti foto: taruh file di folder images/
+       Nama file: photo1.jpg sampai photo4.jpg
+       Tambah/kurangi <figure> sesuai jumlah foto
+  ══════════════════════════════════════════ -->
+  <section class="gallery reveal" id="gallery">
+    <div class="section-inner">
+      <p class="section-label">✦ every first ✦</p>
+      <h2 class="section-heading">Moments</h2>
+
+      <div class="gallery-grid">
+        <!-- GANTI src untuk mengganti foto; ganti alt untuk keterangan foto -->
+        <figure class="gallery-item reveal-stagger">
+          <img src="https://i.ibb.co.com/PGZHnCGn/first-meet.jpg" alt="Kenangan 1" loading="lazy" />
+          <figcaption>Kenangan 1</figcaption><!-- GANTI CAPTION -->
+        </figure>
+        <figure class="gallery-item reveal-stagger">
+          <img src="https://i.ibb.co.com/qLVrBrCV/first-photobooth.jpg" alt="Kenangan 2" loading="lazy" />
+          <figcaption>Kenangan 2</figcaption>
+        </figure>
+        <figure class="gallery-item reveal-stagger">
+          <img src="https://i.ibb.co.com/RGzKqnMr/first-flowers.jpg" alt="Kenangan 3" loading="lazy" />
+          <figcaption>Kenangan 3</figcaption>
+        </figure>
+        <figure class="gallery-item reveal-stagger">
+          <img src="https://i.ibb.co.com/mrhwd9VW/first-holiday.jpg" alt="Kenangan 4" loading="lazy" />
+          <figcaption>Kenangan 4</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 4 – VIDEO MEMORY
+       Ganti video: taruh file di folder video/
+       Nama file: video.mp4
+  ══════════════════════════════════════════ -->
+  <section class="video-section reveal" id="video-section">
+    <div class="section-inner">
+      <p class="section-label">✦ momen spesial ✦</p>
+      <h2 class="section-heading">Our Video</h2>
+
+      <div class="video-wrapper reveal-stagger">
+        <!-- GANTI src untuk mengganti video -->
+        <video controls preload="metadata" poster="images/photo1.jpg">
+          <source src="video/vife.mp4" type="video/mp4" />
+          Browser kamu tidak mendukung video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 5 – CLOSING MESSAGE
+       Ganti teks di dalam <p class="closing-body">
+  ══════════════════════════════════════════ -->
+  <section class="closing reveal" id="closing">
+    <div class="section-inner closing-inner">
+      <div class="closing-deco">✦ ✦ ✦</div>
+      <h2 class="closing-heading">
+        Selamat menjadi 18,<br />
+        <em>yang paling aku cintai.</em>
+      </h2>
+
+      <!-- GANTI PESAN PENUTUP DI BAWAH INI -->
+      <p class="closing-body">
+        aku ga tau masa depan bakal bawa kita ke mana. hidup kadang muter muter dan banyak hal bisa berubah. tapi selama aku masih ada di cerita kamu, aku pengen tetap jadi orang yang jalan di samping kamu. seperti di lagu berhasil dari perunggu, mungkin kita ga selalu tau arah akhirnya, tapi yang penting kita tetap melangkah, tetap berusaha, dan tetap percaya kalau semua ini ada artinya.
+jadi di umur kamu yang ke 18 ini, aku cuma berharap satu hal. semoga semua mimpi kamu pelan pelan jadi nyata, dan semoga di setiap langkah yang kamu ambil, kamu ga pernah merasa sendirian. kalau suatu hari nanti kita benar benar berhasil sampai ke tempat yang kita tuju, aku harap kita bisa lihat ke belakang dan bilang kalau semua perjalanan ini memang layak dijalani bersama.
+      </p>
+
+      <p class="closing-name">
+        <!-- GANTI NAMA DI BAWAH INI -->
+        Airin Nirinda Putri
+      </p>
+      <p class="closing-wish">Happy Birthday 🎂</p>
+    </div>
+
+    <!-- Partikel bintang jatuh di bagian closing -->
+    <div class="falling-stars" aria-hidden="true">
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
